@@ -3,7 +3,7 @@ function [data,describe] = usgs_eqlist(syr,smo,sda,eyr,emo,eda,varargin)
 % Output variables including two matrixes
 % Variable name         type        description
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-% data                  double      Year, Month, Day, Latitude, Longitude, Depth/km, Magnitude
+% data                  double      Year, Month, Day, hour, minute, second, Latitude, Longitude, Depth/km, Magnitude
 % describe              cell        EventID, Author, Catalog, Contributor, ContributorID, MagType, MagAuthor, EventLocationName
 %
 %===================================================================================================================================================================================================================================
