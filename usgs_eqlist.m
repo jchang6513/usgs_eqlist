@@ -3,7 +3,7 @@ function [data,describe] = usgs_eqlist(syr,smo,sda,eyr,emo,eda,varargin)
 % Output variables including two matrixes
 % Variable name         type        description
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-% data                  double      Year, Month, Day, hour, minute, second, Latitude, Longitude, Depth/km, Magnitude
+% data                  double      Year, Month, Day, Hour, Minute, Second, Latitude, Longitude, Depth/km, Magnitude
 % describe              cell        EventID, Author, Catalog, Contributor, ContributorID, MagType, MagAuthor, EventLocationName
 %
 %===================================================================================================================================================================================================================================
@@ -71,8 +71,8 @@ function [data,describe] = usgs_eqlist(syr,smo,sda,eyr,emo,eda,varargin)
 %                                               Limit to events with PAGER alert level "orange".
 %                                               alertlevel=red
 %                                               Limit to events with PAGER alert level "red".
-% callback              String      null        Convert GeoJSON output to a JSONP response using this callback. Mime-type is “text/javascript? NOTE: Must be used with format=geojson
-% eventtype             String      null        Limit to events of a specific type. NOTE: “earthquake?will filter non-earthquake events.
+% callback              String      null        Convert GeoJSON output to a JSONP response using this callback. Mime-type is Â“text/javascript? NOTE: Must be used with format=geojson
+% eventtype             String      null        Limit to events of a specific type. NOTE: Â“earthquake?will filter non-earthquake events.
 % jsonerror             Boolean     false       Request JSON(P) formatted output even on API error results. NOTE: Must be used with format=geojson
 % kmlanimated           Boolean     false       Whether to include timestamp in generated kml, for google earth animation support. NOTE: Must be used with format=kml
 % kmlcolorby            String      age         How earthquakes are colored. Accepted values are:
